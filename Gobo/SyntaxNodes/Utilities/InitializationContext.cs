@@ -19,7 +19,7 @@ internal static class InitializationContext
             }
         }
 
-        return false;
+        return true;
     }
 
     public static bool IsInNewExpression(GmlSyntaxNode? node)

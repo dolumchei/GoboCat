@@ -25,3 +25,5 @@ foo = a.b;
 return a.b().c().d()
 
 var x = a.b.c.d().e();
+
+_tooltip.add_section("stats").add_section("gear");

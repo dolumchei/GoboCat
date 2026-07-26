@@ -51,6 +51,17 @@
             </select>
         </div>
 
+        <div class="mb-3" title="Controls how braces are styled.">
+			<label for="braceStyle" class="form-label text-light">Brace Style</label>
+            <select
+                @bind="_formatOptions.BraceStyle"
+                @bind:after="RequestUpdate">
+				<option value="@BraceStyle.SameLine">Same Line</option>
+				<option value="@BraceStyle.NewLine">New Line</option>
+				<option value="@BraceStyle.Minimal">Minimal</option>
+            </select>
+        </div>
+
         <div class="mb-3" title="Controls how arrays are formatted.">
             <label for="multilineArrays" class="form-label text-light">Multiline Arrays</label>
             <select

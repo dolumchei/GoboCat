@@ -5,8 +5,8 @@ namespace Gobo;
 
 public enum BraceStyle
 {
-    SameLine,
-    NewLine,
+    SameLine = 0,
+    NewLine = 1,
 }
 
 public enum MultilineArgumentsMode
@@ -39,7 +39,6 @@ public record FormatOptions
     public bool BlankLineAfterBlocks { get; set; } = false;
     public bool ExplicitUndefined { get; set; } = false;
 
-    [JsonIgnore]
     public BraceStyle BraceStyle { get; set; } = BraceStyle.SameLine;
 
     [JsonIgnore]
